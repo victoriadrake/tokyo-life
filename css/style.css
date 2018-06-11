@@ -1,1 +1,121 @@
-*{margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box}html{background:#f0f8ff}body{font-size:16px;font-family:monospace}a{text-decoration:none}img{max-height:100vh}.gallery{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row wrap;flex-flow:row wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;width:100vw;max-width:100%;margin-top:30px}@media screen and (max-width: 450px){.gallery{margin-top:10px}}a>.cell{width:20vw;height:20vw;margin:30px;-o-object-fit:cover;object-fit:cover;opacity:0.8}a>.cell:hover{opacity:1}@media screen and (max-width: 450px){a>.cell{width:27vw;height:27vw;margin:10px;opacity:1}}.image{display:none;position:absolute;left:0;z-index:100;width:100%;height:100vh;background-color:rgba(0,0,0,0.9);pointer-events:auto;text-align:center}.image>img{max-width:90%;max-height:90%;margin:60px auto}.image:target{display:block;pointer-events:auto;overflow:hidden}
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html {
+    background: #f0f8ff
+}
+
+body {
+    font-size: 16px;
+    font-family: "Helvetica Neue", Arial, monospace;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+    color: #555
+}
+
+h1 {
+    font-weight: normal
+}
+
+p {
+    margin-top: 1em
+}
+
+a {
+    text-decoration: none;
+    color: #111
+}
+
+a:hover {
+    color: #555
+}
+
+img {
+    max-height: 100vh
+}
+
+.title {
+    padding: 30px;
+    margin: 50px auto;
+    text-align: center
+}
+
+.gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100vw;
+    max-width: 100%;
+    margin-top: 30px
+}
+
+@media screen and (max-width: 450px) {
+    .gallery {
+        margin-top: 10px
+    }
+}
+
+a>.cell {
+    width: 20vw;
+    height: 20vw;
+    margin: 30px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    opacity: 0.8
+}
+
+a>.cell:hover {
+    opacity: 1
+}
+
+@media screen and (max-width: 450px) {
+    a>.cell {
+        width: 27vw;
+        height: 27vw;
+        margin: 10px;
+        opacity: 1
+    }
+}
+
+.image {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    pointer-events: auto;
+    text-align: center
+}
+
+.image>img {
+    max-width: 90%;
+    max-height: 90%;
+    margin: 60px auto
+}
+
+.image:target {
+    display: block;
+    pointer-events: auto;
+    overflow: hidden
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 50px
+}
